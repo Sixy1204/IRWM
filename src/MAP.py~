@@ -1,0 +1,40 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+
+import numpy as np
+import pandas as pd
+import argparse
+
+parser = argparse.ArgumentParser()
+parser.add_argument("-a",default= "../queries/ans_train.csv", type=str)
+parser.add_argument("-p", type=str)
+args = parser.parse_args()
+
+def AP(p_doc, ans_doc):
+    point = 0
+    correct = 0
+    for i,p in enumerate(p_doc):
+        if p in ans_doc:
+            correct += 1
+            point += correct / (i+1)
+    point = point/len(ans_doc)
+    return point
+
+
+
+def MAP(ans_path, result_path):
+    ans = pd.read_csv(ans_path)
+    ans = ans["retrieved_docs"]
+    predict = pd.read_csv(result_path)
+    predict = predict["retrieved_docs"]
+
+    saved_AP = []
+    for i in range(len(predict)):
+        p_doc = predict[i].split()
+        ans_doc = ans[i].split()
+        saved_AP.append(AP(p_doc, ans_doc))
+    MAP = np.mean(saved_AP)
+    return MAP 
+
+print("MAP = ",MAP(ans_path = args.a, result_path = args.p))

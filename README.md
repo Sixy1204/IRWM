@@ -1,3 +1,8 @@
 # Web Retrieval and Mining  
 ## task 1
-Implement the retrieval system by BM25/Okapi with Rocchio Relevance Feedback (pseudo version) in https://www.kaggle.com/c/wm-2020-vsm-model/ (public leaderboard 21/90, private leaderboard 30/90)
+Target: Implement the retrieval system by Vector Space Model with Rocchio Relevance Feedback (pseudo version) in https://www.kaggle.com/c/wm-2020-vsm-model/  
+In task 1, I implemented vsm cosine similarity with bm25 normalized document's tf and bm25 retrieval status value with Rocchio Feedback.
+| 左对齐 | No Feedback | Feedback |
+| :----:| :----: | :----: |
+| cosine similarity | 0.73228 | 0.77450 |
+| bm25 rsv | 0.78876 | 0.79234 |

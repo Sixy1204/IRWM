@@ -3,4 +3,4 @@
 # Replace "./my-program" with the command that can execute your program.
 # Remember to preserve " $@" at the end, which will be the program options we give you.
 
-python ./src/VSM.py $@
+python ./src/main.py $@

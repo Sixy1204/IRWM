@@ -1,8 +1,8 @@
 ## Usage
-python main.py -h
-usage: main.py [-h] [-e E] [-r] [-i I] [-o O] [-m M] [-d D]  
+python main.py -h  
+usage: main.py [-h] [-e E] [-r] [-i I] [-o O] [-m M] [-d D]    
    
-optional arguments:  
+optional arguments:   
   -h, --help  show this help message and exit  
   -e E        experiment method  
   -r          turn on feedback  

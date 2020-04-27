@@ -10,8 +10,9 @@ optional arguments:
   -o O        output ranked file .csv  
   -m M        model dir  
   -d D        docs dir  
-  
-*****
+
+
+
 python MAP.py -h
 usage: MAP.py [-h] [-a A] [-p P]
 

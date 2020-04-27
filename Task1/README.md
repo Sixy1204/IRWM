@@ -13,11 +13,11 @@ optional arguments:
 
 
 
-python MAP.py -h
-usage: MAP.py [-h] [-a A] [-p P]
+python MAP.py -h  
+usage: MAP.py [-h] [-a A] [-p P]  
 
-optional arguments:
-  -h, --help  show this help message and exit
-  -a A        ans_train.csv
-  -p P        predict ranked file
+optional arguments:  
+  -h, --help  show this help message and exit  
+  -a A        ans_train.csv  
+  -p P        predict ranked file  
 

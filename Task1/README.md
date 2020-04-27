@@ -1,5 +1,5 @@
 ## Usage
-python main.py -h  
+* python main.py -h  
 usage: main.py [-h] [-e E] [-r] [-i I] [-o O] [-m M] [-d D]    
    
 optional arguments:   
@@ -13,7 +13,7 @@ optional arguments:
 
 
 
-python MAP.py -h  
+* python MAP.py -h  
 usage: MAP.py [-h] [-a A] [-p P]  
 
 optional arguments:  

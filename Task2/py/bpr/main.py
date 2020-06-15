@@ -20,7 +20,7 @@ import sys
 
 
 def load_data():    
-    df = pd.read_csv('train.csv')
+    df = pd.read_csv('./bpr/train.csv')
     user_items = {}
     itemId_max=[]
     for i,row in df.iterrows():
@@ -42,7 +42,7 @@ user_size, item_size,user_items = load_data()
 # In[12]:
 
 
-model = torch.load('bpr.pth')
+model = torch.load('./bpr/bpr_model.pth')
 
 
 # In[13]:

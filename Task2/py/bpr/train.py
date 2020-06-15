@@ -36,7 +36,7 @@ from bprModel import BPR
 
 
 def load_data():    
-    df = pd.read_csv('train.csv')
+    df = pd.read_csv('./bpr/train.csv')
     user_items = {}
     itemId_max=[]
     for i,row in df.iterrows():
@@ -161,5 +161,5 @@ train(data_loaders, model, optimizer, epochs, batch_size, device)
 # In[16]:
 
 
-torch.save(model, 'bpr.pth')
+torch.save(model, './bpr/bpr_model.pth')
 
